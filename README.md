@@ -41,6 +41,7 @@ Functional Simulation:
       (The path of cshrc could vary depending on the installation destination)
       
 	After this you can see the window like below 
+![Screenshot 2024-10-22 200827](https://github.com/user-attachments/assets/63c39bf0-886a-4d28-80a2-25eb0953ad26)
 
 
 ## Fig 2: Invoke the Cadence Environment
@@ -74,12 +75,14 @@ Functional Simulation:
 	linux:/> nclaunch&                 // On subsequent calls to NCVERILOG
 
 It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple step
+![Screenshot 2024-10-22 201018](https://github.com/user-attachments/assets/b5bc8eaa-3c5d-43a2-a538-98d9e6ec9916)
 
 ## Fig 3: Setting Multi-step simulation
 
 Select Multiple Step and then select “Create cds.lib File” as shown in below figure
 
 Click the cds.lib file and save the file by clicking on Save option
+![Screenshot 2024-10-22 201026](https://github.com/user-attachments/assets/3a094cda-717a-4944-823f-42d101731496)
 
 ## Fig 4: cds.lib file Creation
 
@@ -88,6 +91,9 @@ Click the cds.lib file and save the file by clicking on Save option
 	Select “Don’t include any libraries (verilog design)” from “New cds.lib file” and click on “OK” as in below figure
 
 	We are simulating verilog design without using any libraries
+![Screenshot 2024-10-22 201217](https://github.com/user-attachments/assets/236cf2f0-ba83-4f1d-8cc3-ab0a64663370)
+
+![Screenshot 2024-10-22 201121](https://github.com/user-attachments/assets/845b0a1d-19cd-4669-9033-84b0ca48fd44)
 
 ## Fig 5: Selection of Don’t include any libraries
 
@@ -122,6 +128,7 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 Left side select the file and in Tools : launch verilog compiler with current selection will get enable. Click it to compile the code 
 
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation 
+![Screenshot 2024-10-22 201303](https://github.com/user-attachments/assets/57302169-00cb-460f-bb15-556ce1d5512d)
 
 ## Fig 7: Compiled database in worklib
 
@@ -131,6 +138,7 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 
 	The cds.lib file is an ASCII text file. It defines which libraries are accessible and where they are located.
 It contains statements that map logical library names to their physical directory paths. For this Design, you will define a library called “worklib”
+![Screenshot 2024-10-22 201303](https://github.com/user-attachments/assets/6771da77-d065-4f80-a289-b7fcb6165179)
 
 ## Step 2: Elaboration:– To check the port connections in hierarchical design 
 
@@ -165,12 +173,11 @@ It contains statements that map logical library names to their physical director
 	Steps for simulation – Run the simulation command with simulator options
 
 ## Fig 9: Design Browser window for simulation
+![Screenshot 2024-10-22 201402](https://github.com/user-attachments/assets/819fff55-3846-49eb-b0ad-8f71d8c07205)
 
 ## Fig 10: Simulation Waveform Window
+![Screenshot 2024-10-22 201453](https://github.com/user-attachments/assets/bf586276-810a-45a8-993a-7a15f58fe6c7)
 
 ## Fig 11: Simulation Waveform Window
 
-### Result
-
-The functionality of a 4bit_up-down asynchronous reset Counter was successfully verified using a test bench and simulated with the nclaunch tool.
-
+![Screenshot 2024-10-22 201453](https://github.com/user-attachments/assets/79ddf5ea-b16f-4a3e-8f19-6c510a35e4f8)
